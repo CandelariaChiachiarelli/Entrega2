@@ -1,0 +1,268 @@
+
+/* Tipografías google font*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Configuraciones menú de inicio */
+* {
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+
+body{
+background-color: rgb(250, 250, 249);
+}
+
+/* Media queries para mobile first */ 
+@media (min-width: 300px) {
+    .textos-principales p{
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        color: rgb(5, 5, 5);
+    }
+}
+
+
+/* Media query textos para tablets y computadoras de escritorio */
+@media (min-width: 768px) {
+    .textos-principales p{
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        color: rgb(5, 5, 5);
+    }
+}
+
+
+/* Media querie de imagenes para mobile firts */
+@media (min-width: 300px) {
+    img{
+        width: 75%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Media querie de imagenes para computadoras de escritorio */
+@media (min-width: 768px) {
+    img {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+/* Media querie para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+}
+
+
+/* Modifaciones textos */
+
+/*Titulo*/ 
+h1{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #A0937D 
+}
+
+/* subtitulos */ 
+
+h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: #A0937D;
+    font-size: x-large;
+}
+
+h4{
+    font-family: "Poppins", sans-serif;
+    color: #A0937D;
+    font-size: 50px;
+}
+
+.subtitulos{
+    font-family: "Playfair Display", serif;
+    font-size: large;
+    font-weight: 200;
+    color: #A0937D;
+    
+}
+
+/* textos*/ 
+p{
+    font-family: "Poppins", sans-serif;
+    color: #000000; 
+    font-size: 15px
+}
+
+
+/* Modificaciones multimedia*/
+
+.fotos{ 
+    width: 350px;
+    height: 340px;
+}
+
+.fotos img{
+    width: 200%;
+}
+
+
+.fotosgaleria{
+    width: 400px;
+    height: 800px;
+    padding: 10px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fotoscarousel{
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.carousel-maternidad{
+    width: 500px;
+    height: 900px;
+    padding: 10px;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+
+/* Estilos para imagenes en dispositivos móviles */
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Flex box - grid - box model */ 
+
+header, main, footer {
+    padding: 10px;
+    text-align: center;
+}
+
+
+    header, main, footer {
+    padding: 30px;
+    }
+
+.footer{
+    display: block;
+    justify-content:space-between;
+    margin: 60px;
+    position: relative; bottom: 20px;
+}
+
+.footerinsta{
+    width: 85px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.footeremail{
+    width: 85px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.urlinsta{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.subtitulos{
+    display: flex;
+    justify-content: center;
+}
+
+.fotos{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.container-fluid{
+    display: grid;
+    justify-content: center;
+    row-gap: 25px;
+    left: 50px;
+}
+
+
+.textos-principales{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.formulario{
+    width: 500px;
+    height: 1000px;
+    background-color:#C1CFA1;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.formulario{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
+.conteiner-form{
+    padding: 80px 50px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+    left: 25px;
+    display: grid;
+    row-gap: 25px;
+
+}
+
